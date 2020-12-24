@@ -2889,7 +2889,7 @@ a.btn-sns--youtube {
 .lifeplan__background-1 {
   height: 100%;
   width: 100%;
-  background-image: url("/assets/img/strype_sp2.png");
+  background-image: url("../assets/img/strype_sp2.png");
   background-size: cover;
 }
 
@@ -3232,7 +3232,7 @@ a.btn-sns--youtube {
   justify-content: center;
   width: 110px;
   height: 100px;
-  background-image: url("/assets/img/kumo.png");
+  background-image: url("../assets/img/kumo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -3547,7 +3547,7 @@ a.btn-sns--youtube {
 }
 
 .lifework__background-6 {
-  background-image: url("/assets/img/free_up.svg");
+  background-image: url("../assets/img/free_up.svg");
   background-size: content;
   background-repeat: no-repeat;
   background-position: center;
@@ -3585,7 +3585,7 @@ a.btn-sns--youtube {
 }
 
 .must__background-1 {
-  background-image: url("/assets/img/pc_hands.png");
+  background-image: url("../assets/img/pc_hands.png");
   width: 100%;
   background-size: cover;
   background-position: 50%;
@@ -4345,7 +4345,7 @@ a.btn-sns--youtube {
   content: '';
   width: 50px;
   height: 20px;
-  background-image: url("/assets/img/pink_check.png");
+  background-image: url("../assets/img/pink_check.png");
   background-size: contain;
   background-repeat: no-repeat;
   line-height: 30px;
@@ -4544,7 +4544,7 @@ a.btn-sns--youtube {
   content: '';
   width: 50px;
   height: 20px;
-  background-image: url("/assets/img/yellow_check.png");
+  background-image: url("../assets/img/yellow_check.png");
   background-size: contain;
   background-repeat: no-repeat;
   line-height: 30px;
@@ -4596,13 +4596,13 @@ a.btn-sns--youtube {
 .results__background-1 {
   height: 135px;
   width: 100%;
-  background-image: url("/assets/img/strype1.png");
+  background-image: url("../assets/img/strype1.png");
   background-size: cover;
 }
 
 @media only screen and (min-width: 768px), print {
   .results__background-1 {
-    background-image: url("/assets/img/strype_3.png");
+    background-image: url("../assets/img/strype_3.png");
     height: 500px;
   }
 }
@@ -4760,7 +4760,7 @@ a.btn-sns--youtube {
 }
 
 .results__background-3 {
-  background-image: url("/assets/img/hukidasi.svg");
+  background-image: url("../assets/img/hukidasi.svg");
   background-size: cover;
   position: relative;
   margin: auto;
@@ -5101,7 +5101,7 @@ a.btn-sns--youtube {
 .top__text-2 {
   display: inline-block;
   color: #ffffff;
-  background-image: url("/assets/img/pink_ribon.svg");
+  background-image: url("../assets/img/pink_ribon.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
