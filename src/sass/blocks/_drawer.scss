@@ -14,15 +14,16 @@
 	opacity: 0;
 	visibility: hidden;
 	transform: translateX(100%);
-	transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 10px;
 
 	.is-drawer-active & {
-		@include sp {
+		@include header_sm {
 			opacity: 1;
 			visibility: visible;
 			transform: none;
 		}
-	}
+  }
 }
 
 .drawer__shade {
@@ -39,7 +40,7 @@
 	transition-duration: 0.5s;
 
 	.is-drawer-active & {
-		@include sp {
+		@include header_sm {
 			opacity: 1;
 			visibility: visible;
 		}

@@ -1,0 +1,413 @@
+.lesson2{
+  @include  sp{
+    margin-top: 60px;
+    padding-bottom: 30px;
+  }
+  @include pc{
+    margin: 100px auto;
+  }
+  &__content-1{
+    background-color: #ffffff;
+    @include pc{
+      margin: 40px auto 0;
+      padding: 40px 0px;
+      border-radius: 50%;
+      max-width: 600px;
+    }
+  }
+  &__background-1{
+    position: relative;
+    background-color: #ffebc1;
+    @include sp{
+      margin-top: 40px;
+     padding-top: 10px;
+     height: 50px;
+    }
+    @include pc{
+      margin-top: 80px;
+      padding-top: 10px;
+      height: 88px;
+      text-align: center;
+     }
+  }
+  &__image-1{
+    position: absolute;
+    @include sp{
+      top: 12px;
+      left: 30px;
+      width: 40px;
+    }
+    @include pc{
+      top: 14px;
+      left: 50%;
+      margin-left: -250px;
+      width: 80px;
+    }
+  }
+  &__text-1{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    @include sp{
+      padding-left: 80px;
+    }
+    @include pc{
+      padding-left: 120px;
+    }
+  }
+  &__flex-1{
+    @include pc{
+    display: flex; 
+    }
+  }
+  &__background-2{
+    @include sp{
+      text-align: center;
+    }
+    @include pc{
+    }
+  }
+  &__content-2{
+    display: flex;
+    font-size: 14px;
+    @include pc{
+      justify-content: center;
+    }
+  }
+  &__image-2{
+      display: block;
+      margin: auto;
+  }
+  &__text-2{
+    margin-left: 2em;
+    display: block;
+    font-weight: bold;
+    background-color: #ffebc1;
+    text-align: center;
+    border-radius: 50px;
+    @include sp{
+      width: 100px;
+      font-size: 16px;
+    }
+    @include pc{
+      padding: 0px 20px;
+    }
+  }
+  &__text-3{
+    margin-left: 0.5em;
+    font-size: 16px;
+    @include pc{
+      padding-top: 1em;
+    }
+  }
+  &__text-4{
+    margin-left: 2em;
+    font-size: 16px;
+    @include sp{
+      padding-bottom: 20px;
+    }
+    @include pc{
+      text-align: center;
+    }
+  }
+  &__flex-1{
+    @include pc{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__content-3{
+    position: relative;
+    background-color: #ffffff;
+    @include sp{
+      margin-top: 60px;
+      padding: 10px;
+    }
+    @include pc{
+      margin: 60px 20px 0;
+      padding: 10px;
+      width: 45%;
+    } 
+  }
+  &__image-3{
+    display: block;
+    position: absolute;
+    @include sp{
+      top: -25px;
+    }
+    @include pc{
+      top: -25px;
+    }
+  }
+  &__box-1{
+    @include sp{
+      border: 2px solid #cd6171;
+      box-sizing: border-box;
+      padding: 30px 10px 30px;
+    }
+    @include pc{
+      border: 2px solid #cd6171;
+      box-sizing: border-box;
+      padding: 30px 30px 30px;
+      min-height: 950px;
+    }
+  }
+  &__text-5{
+    @include sp{
+      font-size: 14px;
+      padding-top: 10px;
+      padding-left: 2em;
+      position: relative;
+      &:before{
+        width: 14px;
+        height: 14px;
+        background-color: #ffa0ae;
+        content: "";
+        position: absolute;
+        top: 1em;
+        left: 5px;
+      }
+    }
+  }
+  &__span-1{
+    font-weight: bold;
+    @include sp{
+      border-bottom: 2px solid #ffa0ae;
+    }
+  }
+  &__content-4{
+    position: relative;
+  }
+  &__image-4{
+    display: block;
+    margin: auto;
+    @include sp{
+      width: 200px;
+    }
+  }
+  &__text-6{
+    position: absolute;
+    color: #ffffff;
+    @include sp{
+      top: 125px;
+      left: 50%;
+      margin-left: -50px;
+      font-size: 16px;
+    }
+    @include pc{
+      top: 185px;
+      left: 50%;
+      margin-left: -50px;
+      font-size: 24px;
+    }
+  }
+  &__text-7{
+    position: absolute;
+    color: #ffa0ae;
+    @include sp{
+      top: 155px;
+      left: 50%;
+      margin-left: -30px;
+      font-size: 20px;
+    }
+    @include pc{
+      top: 235px;
+      left: 50%;
+      margin-left: -40px;
+      font-size: 28px;
+    }
+  }
+  &__text-8{
+    position: relative;
+    @include sp{
+      font-size: 14px;
+      padding-left: 2em;
+      padding-top: 2em;
+    }
+    @include pc{
+      padding-left: 2em;
+      padding-top: 2em; 
+    }
+    &:before{
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: #ffa0ae;
+      content: "";
+      position: absolute;
+      top: 2.3em;
+      left: 5px;
+    }
+  }
+  &__box-2{
+    @include sp{
+      border: 2px solid #cd6171;
+      box-sizing: border-box;
+      padding: 30px 10px 30px;
+    }
+    @include pc{
+      border: 2px solid #cd6171;
+      box-sizing: border-box;
+      padding: 30px 30px 30px;
+    }
+  }
+  &__text-9{
+    @include sp{
+    font-size: 16px;
+    }
+  }
+  &__text-10{
+    color: #646464;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  &__content-5{
+    margin: 30px auto 0;
+    text-align: center;
+    @include sp{
+      width: 150px;
+      line-height: 20px;
+    }
+    @include pc{
+      width: 80%;
+      // line-height: 40px;
+    }
+  }
+  &__text-11{
+    display: block;
+    background-color: #ffa0ae;
+    border-radius: 100px;
+    color: #ffffff;
+    @include sp{
+      height: 30px;
+      font-size: 16px;
+      padding-top: 2px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    @include pc{
+      height: 50px;
+      font-size: 24px;
+      padding-top: 5px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  &__text-12{
+    display: block;
+    background-color: #ffebc1;
+    border-radius: 100px;
+    color: #cd6171;
+    @include sp{
+      height: 30px;
+      font-size: 16px;
+      padding-top: 2px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    @include pc{
+      height: 50px;
+      font-size: 24px;
+      padding-top: 5px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  &__text-13{
+    display: block;
+    background-color: #e6dbaf;
+    border-radius: 100px;
+    color: #646464;
+    @include sp{
+      height: 30px;
+      font-size: 16px;
+      padding-top: 2px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    @include pc{
+      height: 50px;
+      font-size: 24px;
+      padding-top: 5px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+  &__image-5{
+    width: 25%;
+    padding: 0.3em 0;
+    @include pc{
+      width: 15%;
+    }
+  }
+  &__text-14{
+    padding: 3em 0 0;
+    @include sp{
+      font-size: 14px;
+    }
+  }
+  &__background-3{
+    position: relative;
+    background-color: #ffe7ea;
+    @include sp{
+     margin-top: 60px;
+     padding-top: 10px;
+     height: 50px;
+    }
+    @include pc{
+      margin: 60px auto 0;
+      padding-top: 10px;
+      height: 88px;
+      text-align: center;
+     }
+  }
+  &__content-6{
+    background-color: #ffffff;
+    @include  sp{
+      padding-bottom: 30px;
+    }
+    @include pc{
+      position: relative;
+      margin: 40px auto 0;
+      padding: 40px 0px;
+      border-radius: 50%;
+      max-width: 600px;
+    }
+  }
+  &__text-15{
+    padding-left: 80px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    @include pc{
+      padding-left: 120px;
+    } 
+  }
+  &__text-16{
+    color: #646464;
+    @include sp{
+      font-size: 12px;
+      margin: 0 2em;
+    }
+    @include pc{
+      position: absolute;
+      top: 500px;
+      font-size: 18px;
+    }
+  }
+  &__content-7{
+    position: relative;
+    background-color: #ffffff;
+    @include sp{
+      margin-top: 60px;
+      padding: 10px;
+    }
+    @include pc{
+      margin: 160px auto 0;
+      padding: 10px;
+      width: 45%;
+    } 
+  }
+  &__content-8{
+    text-align: center;
+  }
+  &__image-6{
+    @include sp{
+      width: 250px;
+      margin: 30px 0 0;
+    }
+  }
+}

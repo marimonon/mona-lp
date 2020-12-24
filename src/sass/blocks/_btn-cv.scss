@@ -1,0 +1,126 @@
+/* ボタン内のアイコン */
+.btn-cv a:before {
+  content: "\f138";
+  font-family: "fontawesome";
+  font-weight: normal;
+  font-size: 1.1em;
+  margin-top: -.6em;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+}
+.btn-cv a:hover {
+  box-shadow: 1px 1px 2px 0 #a1a1a1;
+  filter: alpha(opacity=70);
+  opacity: .7;
+}
+
+/* ボタンの光沢 */
+.is-reflection{
+  overflow: hidden;
+}
+.is-reflection :after {
+  -moz-animation: is-reflection 4s ease-in-out infinite;
+  -moz-transform: rotate(45deg);
+  -ms-animation: is-reflection 4s ease-in-out infinite;
+  -ms-transform: rotate(45deg);
+  -o-animation: is-reflection 4s ease-in-out infinite;
+  -o-transform: rotate(45deg);
+  -webkit-animation: is-reflection 4s ease-in-out infinite;
+  -webkit-transform: rotate(45deg);
+  animation: is-reflection 4s ease-in-out infinite;
+  background-color: #fff;
+  content: " ";
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: -180px;
+  transform: rotate(45deg);
+  width: 30px;
+}
+/* アニメーションを遅延させる */
+.is-reflection + .is-reflection :after {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@keyframes is-reflection {
+  0% { -webkit-transform: scale(0) rotate(45deg); transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); transform: scale(50) rotate(45deg); opacity: 0; }
+}
+@-webkit-keyframes is-reflection {
+  0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+  80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+  81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+  100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}
+
+/* CVボタン矢印揺れ */
+.is-trembling a:before {
+  -webkit-animation-name:is-trembling;
+  -webkit-animation-duration:.8s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:ease;
+  -moz-animation-name:is-trembling;
+  -moz-animation-duration:1s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:ease;
+}
+@-webkit-keyframes is-trembling {
+  0% {-webkit-transform:translate(-3px, 0);}
+  100% {-webkit-transform:translate(0, 0);}
+}
+
+/* ボタンをバウンドさせる */
+.is-bounce {
+  animation: bounce 4s infinite;
+  -moz-animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+@-webkit-keyframes bounce {
+  0%, 4%, 10%, 18%, 100% {-webkit-transform: translateY(0);}
+  5% {-webkit-transform: translateY(-6px);}
+  12% {-webkit-transform: translateY(-4px);}
+}
+@keyframes bounce {
+  20%, 24%, 30%, 34%, 100% {-webkit-transform: translateY(0);transform: translateY(0);}
+  25% {-webkit-transform: translateY(-6px);transform: translateY(-6px);}
+  32% {-webkit-transform: translateY(-4px);transform: translateY(-4px);}
+}
+/* アニメーションを遅延させる */
+.is-bounce + .is-bounce {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+/* ぷるるるるん！ */
+.is-purun {
+  -webkit-animation: is-purun 5s infinite;
+  -moz-animation: is-purun 5s infinite;
+  animation: is-purun 5s infinite;
+}
+@-webkit-keyframes is-purun {
+   0% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+   4% { -webkit-transform: scale(0.9, 0.9) translate(0%, 3%); }
+   8% { -webkit-transform: scale(1.1, 0.8) translate(0%, 7%); }
+  12% { -webkit-transform: scale(0.9, 0.9) translate(0%, -7%); }
+  18% { -webkit-transform: scale(1.1, 0.9) translate(0%, 3%); }
+  25% { -webkit-transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+@keyframes is-purun {
+   0% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+   4% { transform: scale(0.9, 0.9) translate(0%, 3%); }
+   8% { transform: scale(1.1, 0.8) translate(0%, 7%); }
+  12% { transform: scale(0.9, 0.9) translate(0%, -7%); }
+  18% { transform: scale(1.1, 0.9) translate(0%, 3%); }
+  25% { transform: scale(1.0, 1.0) translate(0%, 0%); }
+}
+/* アニメーションを遅延させる */
+.is-purun + .is-purun {
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}

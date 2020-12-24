@@ -37,3 +37,20 @@
 @include pc {
 	.u-hidden-pc{	display: none !important; }
 }
+
+.u-border-p {
+  @include sp{
+    border-bottom: 2px solid #ffa0ae;
+  }
+  @include pc{
+    border-bottom: 4px solid #ffa0ae;
+  }
+}
+
+.u-bold{
+  font-weight: bold;
+}
+
+.u-span{
+  display: inline-block;
+}

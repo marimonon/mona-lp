@@ -1,3 +1,23 @@
 .footer {
-
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  @include sp{
+    padding: 0 10px 10px;
+  }
+  &__image-1{
+    display: inline-block;
+    @include sp{
+      width: 100px;
+    }
+    @include pc{
+      width: 400px;
+    }
+  }
+  &__text-1{
+    color: #646464;
+    @include sp{
+      font-size: 10px;
+    }
+  }
 }

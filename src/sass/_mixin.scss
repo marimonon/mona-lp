@@ -10,6 +10,22 @@
 		@content;
 	}
 }
+@mixin pc-s {
+  @media only screen and (min-width: 768px) and  (max-width: 1000px ), print {
+    @content; 
+  }
+}
+@mixin header_sm {
+	@media only screen and (max-width: 1129px) {
+		@content;
+	}
+}
+
+@mixin header_lg {
+	@media only screen and (min-width: 1130px), print {
+		@content;
+	}
+}
 
 
 // ホバー時に opacity を下げる

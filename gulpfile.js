@@ -94,7 +94,8 @@ const image = cb => gulp.src( path.imageSrc )
 
 // ファイル監視
 const watch = cb => {
-	gulp.watch( path.ejsSrc, ejs_task ).on('change', browserSync.reload);
+	// gulp.watch( path.ejsSrc, ejs_task ).on('change', browserSync.reload);
+	gulp.watch( path.html ).on('change', browserSync.reload);
 	gulp.watch( path.scss, css );
 	gulp.watch( path.jsSrc, js ).on('change', browserSync.reload);
 	gulp.watch( path.imageSrc, image ).on('change', browserSync.reload);

@@ -1,0 +1,332 @@
+.lifework{
+  background-color: #fff8e6;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  &__border-1{
+    margin: auto;
+    @include sp{
+      padding-top: 30px;
+    }
+    @include pc{
+      padding-top: 120px;
+    }
+  }
+  &__span-1{
+    display: block;
+    margin: auto;
+    @include sp{
+      border-bottom: solid 5px #ffa0ae;
+      width: 150px; 
+    }
+    @include pc{
+      border-bottom: solid 10px #ffa0ae;
+      width: 450px; 
+    }
+  }
+  &__background-2{
+    background-color: #ffffff;
+    margin: auto;
+    @include sp{
+      width: 300px;
+      padding: 10px;
+      margin-top: 30px;
+      border: solid 5px #ffd583;
+      font-size: 14px;
+      border-radius: 50px;
+    }
+    @include pc{
+      width: 60%;
+      padding: 2em;
+      margin-top: 4em;
+      border: solid 5px #ffd583;
+      font-size: 14px;
+      border-radius: 50px;
+    } 
+  }
+  &__flex-1{
+    display: flex;
+    @include pc{
+      justify-content: center;
+      width: 1000px;
+      margin: auto;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__box-1{
+    display: flex;
+    width: 50%;
+    position: relative;
+  }
+  &__image-1, &__image-2, &__image-3, &__image-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 110px;
+    height: 100px;
+    background-image: url("/assets/img/kumo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include pc{
+      width: 330px;
+      height: 300px;
+    }
+  }
+  &__image-1{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    @include pc{
+      left: 100px;
+    }
+  }
+  &__image-2{
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    @include pc{
+      top: 240px;
+      left: 100px;
+    }
+
+  }
+  &__image-3{
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    @include pc{
+      left: 360px;
+    }
+  }
+  &__image-4{
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    @include pc{
+      top: 240px;
+      left: 360px;
+    }
+  }
+  &__span-2{
+    display: block;
+  }
+  &__box-2{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include pc{
+      justify-content: flex-end;
+    }
+  }
+  &__background-3{
+    width: 50%;
+    @include sp{
+      height: 25px;
+      background-color: #ffd583;
+      border: solid 5px #ffffff;
+      border-radius: 50px;
+      margin-top: 18px;
+      // margin-left: -50px;
+    }
+    // @include pc{
+    //   position: absolute;
+    //   top: 0px;
+    //   // left: 50%;
+    //   height: 60px;
+    //   background-color: #ffd583;
+    //   border: solid 5px #ffffff;
+    //   border-radius: 50px;
+    //   margin-top: 40px;
+    // }
+  }
+  &__background-4{
+    width:20%;
+    @include sp{
+      height: 15px;
+      border: solid 1px #ffd583;
+      border-radius: 50px;
+      margin-top: 18px;
+      margin-left: 50px;
+    }
+    // @include pc{
+    //   position: absolute;
+    //   top: 100px;
+    //   height: 40px;
+    //   border: solid 1px #ffd583;
+    //   border-radius: 50px;
+    //   margin-top: 40px;
+    // }
+  } 
+  &__image-5{
+    width: 70%;
+    margin-top: -25px;
+    margin-left: 20px;
+    @include pc{
+      margin-top: 220px;
+      margin-left: 120px;
+    }
+  }
+  &__background-5{
+    text-align: left;
+    @include sp{
+      margin: 30px;
+    }
+    @include pc{
+     width: 1000px;
+     margin: auto;
+     margin-top: 80px;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__span-3{
+    font-weight: bold;
+  }
+  &__content-3{
+    text-align: center;
+    margin: 0 10px;
+    padding-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include sp{
+      padding-left: 50px;
+    }
+    @include pc{
+      width: 1000px;
+      margin: 80px auto 0;
+    }
+    @include pc-s{
+      width: 100%;
+      margin: 80px auto 0;
+    }
+  }
+  &__text-1{
+    margin: -35px 0 0 0;
+    width: 80%;
+    background-color: #ffd583;
+    border-radius: 100px;
+    @include sp{
+      margin-bottom: -15px;
+    }
+    @include pc{
+      margin: -55px auto 0;
+    }
+  }
+  &__content-4{
+    text-align: left;
+    @include sp{
+      height: 120px;
+      padding-top: 30px;
+    }
+    @include pc{
+      height: 300px;
+      padding: 40px;
+    }
+  }
+  &__list {
+    list-style: none;
+    counter-reset: i;
+    @include pc{
+      width: 400px;
+      margin: auto;
+    }
+    > li {
+      text-indent: -2em;
+      @include pc{
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      &:before {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #ffa0ae;
+        color: #ffffff;
+        text-align: center;
+        line-height: 15px;
+        margin-right: 5px;
+        text-indent: 0;
+        counter-increment: i;
+        font-size: 10px;
+        content: counter(i);
+        vertical-align: 3px;
+        @include pc{
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  &__content-5{
+    text-align: left;
+    margin: 2em 20px;
+    @include pc{
+      margin: 80px auto 0;
+      width: 600px;
+    }
+  }
+  &__content-6{
+    padding-top: 1em;
+    padding-left: 3em;
+  }
+  &__text-3{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #ffd583;
+      border-radius: 50%;
+      margin-top: 3px;
+      margin-left: -2em;
+      @include pc{
+        width: 30px;
+        height: 30px;
+        margin-top: 10px;
+      }
+    }
+  }
+  &__image-6{
+    display: block;
+    margin: 1em auto 0;
+    @include pc{
+      width: 400px;
+    }
+  }
+  &__background-6{
+    background-image: url("/assets/img/free_up.svg");
+    background-size: content;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include sp{
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @include pc{
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-size: 1000px;
+    }
+  }
+  &__text-4{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include sp{
+      font-size: 14px;
+      // font-weight: bold;
+    }
+    @include pc{
+      font-size: 36px;
+      // font-weight: bold;
+    }
+  }
+}

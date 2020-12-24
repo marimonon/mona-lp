@@ -1,0 +1,252 @@
+ .results{
+   text-align: center;
+   @include sp{
+     padding-bottom: 20px;
+   }
+   @include pc{
+     padding-bottom: 40px;
+   }
+  &__background-1{
+    height: 135px;
+    width: 100%;
+    background-image:url("/assets/img/strype1.png");
+    background-size: cover;
+    @include pc{
+      background-image:url("/assets/img/strype_3.png");
+      height: 500px;
+    }
+  }
+  &__border-1{
+    margin: auto;
+    text-align: center;
+    @include sp{
+      border-bottom: solid 5px #ffa0ae;
+      width:140px;
+      padding-top: 35px;
+    }
+    @include pc{
+      border-bottom: solid 10px #ffa0ae;
+      width:500px;
+      padding-top: 150px;      
+    }
+  }
+  &__border-2{
+    @include sp{
+      height: 15px;
+      background-color: #e6dbaf;
+    }
+    @include pc{
+      height: 40px;
+      background-color: #e6dbaf;
+    }      
+  }
+  &__background-2{
+    display: inline-block;
+    margin-top:-60px;
+    background-color: #e6dbaf;
+    padding: 10px;
+    border-radius: 50%;
+    @include pc{
+      padding: 20px;
+      margin-top: -190px;
+    }
+  }
+  &__image-1{
+    @include sp{
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      text-align:center;
+      line-height: 85px;
+    }
+  }
+  &__text-1{
+    @include sp{
+      margin-top: 10px;
+    }
+  }
+  &__text-2{
+    color:#646464;
+    @include pc{
+      padding-top: 40px;
+    }
+  }
+  &__border-3{
+    border-bottom: 2px dotted #cd6171;
+    margin-top: 20px;
+    @include pc{
+      border-bottom: 10px dotted #cd6171;
+    }
+  }
+  &__content-1{
+    text-align: left;
+    margin: auto;
+    @include sp{
+      margin: 20px 10px 0;
+      width: 300;
+    }
+    @include pc{
+      width: 1000px;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__text-3{
+    margin-top: 1em;
+    @include pc{
+      padding-left: 100px;
+    }
+  }
+  &__span-1{
+    font-weight: bold;
+    @include sp{
+      border-bottom: 2px solid #ffa0ae;
+    }
+  }
+  &__span-2{
+    font-weight: bold;
+  }
+  &__span-3{
+    font-weight: bold;
+    color: #cd6171;
+    @include sp{
+      font-size: 20px;
+    }
+    @include pc{
+      font-size: 36px;
+    }
+  }
+  &__background-3{
+    background-image: url("/assets/img/hukidasi.svg");
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    @include sp{
+      font-size: 12px;
+      width: 280px;
+      height: 35px;
+      padding-top: 5px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include pc{
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 800px;
+      height: 100px;
+    }
+  }
+  &__text-4{
+    @include sp{
+      font-size: 12px;
+    }
+    @include pc{
+      padding-top: 25px;
+    }
+  }
+  &__image-2{
+    position: absolute;
+    @include sp{
+      width: 45px;
+      margin-left: 120px;
+      margin-top: -18px;
+    }
+    @include pc{
+      margin-left: 350px;
+      margin-top: -40px;
+    }
+    @include pc-s{
+      margin-left: 300px;
+    }
+  }
+  &__border-4{
+    border-bottom: 2px dotted #cd6171;
+    margin-top: 40px;
+    @include pc{
+      border-bottom: 10px dotted #cd6171;
+      margin-top: 120px;
+    }
+  }
+  &__content-2{
+    background: rgba(255, 213, 131, 0.5);
+    text-align: left;
+    @include sp{
+      margin: 25px 10px 0;
+      padding: 10px 10px;
+      border-radius: 5px;
+    }
+    @include pc{
+      margin: auto;
+      width: 60%;
+      margin-top: 80px;
+      padding: 40px;
+    }
+  }
+  &__content-3{
+    text-align: left;
+    @include sp{
+      margin: auto 10px;
+      font-size: 16px;
+    }
+    @include pc{
+      width: 60%;
+      margin: auto;
+    }
+  }
+  &__text-5{
+    padding-top: 20px;
+  }
+  &__content-4{
+    text-align: left;
+    @include sp{
+      margin: auto 10px;
+      font-size: 14px;
+    }
+    @include pc{
+      width: 60%;
+      margin: auto;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__content-5{
+    padding-left: 3em;
+  }
+  &__list {
+    list-style: none;
+    counter-reset: i;
+    padding-top: 20px;
+    > li {
+      text-indent: -2em;
+      @include pc{
+        font-size: 28px;
+      }
+      &:before {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-color: #ffa0ae;
+        color: #ffffff;
+        text-align: center;
+        line-height: 15px;
+        margin-right: 5px;
+        text-indent: 0;
+        counter-increment: i;
+        font-size: 12px;
+        content: counter(i);
+        @include pc{
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          line-height: 40px;
+          font-size: 24px;
+          vertical-align: 2px;
+        }
+      }
+    }
+  }
+}

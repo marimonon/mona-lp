@@ -1,0 +1,141 @@
+.last{
+  &__background-1{
+    @include sp{
+      margin: 2em auto -0.8em;
+      text-align: center;
+    }
+    @include pc{
+      margin: 2em auto -1.4em;
+      text-align: center;
+    } 
+  }
+  &__text-1{
+    display: inline-block;
+    text-align: center;
+    background-color: #ffd583;
+    color: #ffffff;
+    border-radius: 50px;
+    @include sp{
+      font-size: 16px;
+      width: 150px;
+    }
+    @include pc{
+      width: 200px;
+    }
+  }
+  &__background-2{
+    background-color: #ffebc1;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+  }
+  &__image-1{
+    display: inline-block;
+    @include sp{
+      width: 200px;
+      border-bottom: 4px solid #87ba60;
+      margin-bottom: 10px;
+    }
+    @include pc{
+      width: 500px;
+      border-bottom: 4px solid #87ba60;
+      margin-bottom: 20px;
+    }
+  }
+  &__content-2{
+    display: flex;
+    justify-content: space-between;
+    @include sp{
+      width: 100px;
+      margin: auto;
+    }
+    @include pc{
+      width: 200px;
+      margin: auto;
+    }
+  }
+  &__content-3{
+    @include sp{
+      padding: 20px 10px 0;
+    }
+    @include pc{
+      width: 1000px;
+      margin: auto;
+      padding: 40px;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__text-2{
+    text-align: left;
+  }
+  &__content-4{
+    text-align: left;
+    @include sp{
+      padding: 1em 30px 0;
+    }
+    @include pc{
+      padding: 1em 2em 0;
+    }
+  }
+  &__text-3{
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #87BA60;
+      margin-top: 3px;
+      margin-left: -20px;
+      @include pc{
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+        margin-left: -30px; 
+      }
+    }
+  }
+  &__icon{
+    text-align: center;
+  }
+}
+
+a.btn-sns {
+  font-size: 30px;
+  line-height: 50px;
+
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: auto;
+
+  letter-spacing: 0;
+
+  color: #fff;
+  border-radius: 50%;
+  @include sp{
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+a.btn-sns:hover {
+  color: #fff;
+}
+
+a.btn-sns--twitter {
+  background: #1da1f2;
+}
+
+a.btn-sns--line {
+  background: #00b900;
+}
+
+a.btn-sns--youtube {
+  background: #cd201f;
+}

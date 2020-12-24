@@ -1,0 +1,200 @@
+.voice{
+  background-color: #ffebc1;
+  margin-bottom: 30px;
+  &__background-1{
+    text-align: center;
+    @include sp{
+      width: 200px;
+      border-bottom: 4px solid #ffa0ae;
+      padding:  40px 40px 0;
+      margin: 0 auto 40px;
+    }
+    @include pc{
+      padding-top: 80px;
+      margin: 0 auto 80px;
+      width: 250px;
+      border-bottom: 10px solid #ffa0ae;
+    }
+  }
+  &__text-1{
+    font-weight: bold;
+  }
+  &__box-1{
+    background-color: #ffffff;
+    @include sp{
+      margin: 0 10px;
+      border: 4px solid #e6dbaf;
+      padding-bottom: 20px;
+    }
+    @include pc{
+      width: 1000px;
+      margin: 0 auto;
+      border: 4px solid #e5e4df;
+      padding-bottom: 40px;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__text-2, &__text-3, &__text-4{
+    @include sp{
+      margin: 20px 10px 0;
+    }
+    @include pc{
+      margin: 40px;
+    }
+  }
+  // &__flex-1{
+  //   @include pc{
+  //     display: flex;
+  //     width: 1000px;
+  //     margin: auto;
+  //     justify-content: space-between;
+  //     flex-wrap: wrap;
+  //   }
+  // }
+  &__flex-2{
+    @include pc{
+      // width: 45%;
+      // display: flex;
+      // flex-direction: column;
+      width: 1000px;
+      margin: auto;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__content-1{
+    position: relative;
+  }
+  &__background-2{
+    margin-top: 3em;
+    background-color: #ffffff;
+    @include sp{
+      margin-left: 10px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #87ba60;
+    }
+    @include pc{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #87ba60;
+    }
+  }
+  &__text-5{
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    @include pc{
+      font-size: 18px;
+    }
+  }
+  &__text-6{
+    @include pc{
+      font-size: 18px;
+    }
+  }
+  &__box-2{
+    background-color: #ffffff;
+    border-radius: 10px;
+    @include sp{
+      margin: 10px 10px 0;
+      padding: 10px;
+      border: 2px solid #87ba60; 
+    }
+    @include pc{
+      margin: 20px auto 0;
+      padding: 20px;
+      border: 2px solid #87ba60; 
+    }
+  }
+  &__background-3{
+    margin-top: 3em;
+    background-color: #ffffff;
+    @include sp{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ffa0ae; 
+    }
+    @include pc{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ffa0ae; 
+    }
+  }
+  &__box-3{
+    background-color: #ffffff;
+    border-radius: 10px;
+    @include sp{
+      margin: 10px 10px 0;
+      padding: 10px;
+      border: 2px solid #ffa0ae; 
+    }
+    @include pc{
+      margin: 20px auto 0;
+      padding: 20px;
+      border: 2px solid #ffa0ae; 
+    }
+  }
+  &__background-4{
+    margin-top: 3em;
+    background-color: #ffffff;
+    @include sp{
+      margin-left: 10px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ffd583; 
+    }
+    @include pc{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ffd583; 
+    }
+  }
+  &__box-4{
+    background-color: #ffffff;
+    border-radius: 10px;
+    @include sp{
+      margin: 10px 10px 0;
+      padding: 10px;
+      border: 2px solid #ffd583; 
+    }
+    @include pc{
+      margin: 20px auto 0;
+      padding: 20px;
+      border: 2px solid #ffd583; 
+    }
+  }
+  &__flex-3{
+    @include sp{
+     padding-bottom: 40px;
+    }
+    @include pc{
+      display: flex;
+      width: 1000px;
+      margin: auto;
+      justify-content: space-between;
+    }
+    @include pc-s{
+      width: 100%;
+    }
+  }
+  &__content-2{
+    @include sp{
+      // margin: 40px 10px -240px;
+      margin: 40px 10px 0px;
+    }
+    @include pc{
+      width: 45%;
+      margin: 40px 0;
+    }
+  }
+}
