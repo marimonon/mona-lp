@@ -9,10 +9,10 @@
   &__background-1{
     height: 135px;
     width: 100%;
-    background-image:url("/assets/img/strype1.png");
+    background-image:url("../assets/img/strype1.png");
     background-size: cover;
     @include pc{
-      background-image:url("/assets/img/strype_3.png");
+      background-image:url("../assets/img/strype_3.png");
       height: 500px;
     }
   }
@@ -118,7 +118,7 @@
     }
   }
   &__background-3{
-    background-image: url("/assets/img/hukidasi.svg");
+    background-image: url("../assets/img/hukidasi.svg");
     background-size: cover;
     position: relative;
     margin: auto;
